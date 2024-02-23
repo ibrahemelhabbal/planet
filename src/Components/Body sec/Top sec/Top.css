@@ -1,0 +1,344 @@
+.headerSec {
+  justify-content: space-between;
+}
+.headerSec h1 {
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+}
+.headerSec p {
+  font-size: 1.4rem;
+  color: rgb(146, 146, 146);
+  font-weight: 500;
+}
+.searchBar {
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgb(197, 197, 197);
+}
+.searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.searchBar .icon {
+  color: rgb(197, 197, 197);
+  cursor: pointer;
+  &:hover {
+    color: rgb(92, 153, 2);
+  }
+}
+.adminDiv {
+  gap: 1rem;
+}
+.adminDiv .icon {
+  font-size: 2.5rem;
+  background: white;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px;
+  color: rgb(90, 90, 90);
+  box-shadow: rgba(197, 197, 197, 0.836);
+  &:hover {
+    color: rgb(197, 197, 197);
+  }
+}
+.adminImage {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: rgb(197, 197, 197);
+}
+.adminImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.cardSec {
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.rightCard {
+  position: relative;
+  flex-basis: 60%;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.rightCard h1,
+p,
+.btn {
+  z-index: 100;
+}
+.rightCard h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+}
+.rightCard p {
+  font-size: 1.3rem;
+  color: rgb(243, 255, 225);
+  font-weight: 600;
+}
+
+.videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.videoDiv video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.buttons {
+  gap: 1rem;
+}
+.buttons .btn {
+  box-shadow: none;
+  padding: 0.8rem 1.5rem;
+  color: rgb(92, 153, 2);
+  border-radius: 2px solid transparent;
+}
+.btn.transparent {
+  background: none;
+  border: 2px solid rgb(243, 255, 225);
+  color: rgb(243, 255, 225);
+}
+.buttons .btn:hover {
+  background: rgb(243, 255, 225);
+  color: rgb(92, 153, 2);
+}
+.leftCard {
+  flex-basis: 50%;
+  position: relative;
+  left: 3.4rem;
+}
+.main {
+  position: relative;
+  padding: 1rem;
+  height: 200px;
+  border-radius: 1rem;
+  justify-content: space-between;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    background-color: rgb(243, 255, 225);
+    left: 0;
+    bottom: 0;
+    border-radius: 1rem;
+  }
+}
+.textDiv {
+  z-index: 100;
+  position: relative;
+}
+.textDiv h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.textDiv.flex {
+  gap: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+.flex small {
+  font-size: 1.2rem;
+  display: block;
+  color: rgb(92, 153, 2);
+  font-weight: 500;
+  padding: 0.5rem 0.3rem;
+  margin-bottom: 1.5rem;
+}
+.flex.link {
+  cursor: pointer;
+  &:hover {
+    color: rgb(92, 153, 2);
+    .icon {
+      transform: translateX(10px);
+      transition: 0.3s ease;
+    }
+  }
+}
+.imgDiv {
+  transform: translateY(-20px);
+}
+.imgDiv img {
+  width: 300px;
+}
+.sideBarCard2 {
+  display: none;
+  width: 95%;
+  padding: 0.4rem;
+  text-align: center;
+  position: relative;
+}
+.sideBarCard2 .icon {
+  position: absolute;
+  background-color: rgb(180, 230, 106);
+  border: 10px solid white;
+  font-size: 3rem;
+  border-radius: 50%;
+  top: -1rem;
+  right: 47%;
+  transform: translate(50%);
+  z-index: 1000;
+}
+.cardContent {
+  position: relative;
+  padding: 0.3rem;
+  background-color: rgb(180, 230, 106);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cardContent h3 {
+  font-size: 2rem;
+
+  margin-top: 3rem;
+
+  font-weight: 800;
+}
+.cardContent p {
+  font-size: 1.3rem;
+  color: rgb(142, 142, 142);
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.cardContent .btn {
+  position: relative;
+  color: rgb(114, 114, 114);
+  z-index: 1000;
+}
+.cardContent .btn:hover {
+  background: rgb(205, 205, 205);
+  opacity: 0.7;
+}
+.cardContent .circle1,
+.circle2 {
+  position: absolute;
+  background-color: rgb(226, 226, 226);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.circle1 {
+  height: 100px;
+  width: 100px;
+  top: -50px;
+  left: -50;
+}
+.circle2 {
+  height: 150px;
+  width: 150px;
+  top: 181px;
+  left: 175px;
+  z-index: 1;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>media */
+@media screen and (max-width: 990px) {
+  .cardSec {
+    flex-direction: column;
+    .rightCard,
+    .leftCard {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
+  .leftCard {
+    margin-top: 2rem;
+    align-self: flex-start;
+    height: 10px !important;
+    left: 1rem;
+  }
+  .sideBarCard {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 918px) {
+  .headerSec {
+    .searchBar {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 725px) {
+  .cardSec {
+    .leftCard {
+      .main {
+        width: 100%;
+      }
+      .sideBarCard {
+        display: none !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 490px) {
+  .headerSec {
+    .adminDiv {
+      display: none;
+    }
+    .title {
+      text-align: center;
+      margin: auto;
+    }
+  }
+  .cardSec {
+    .rightCard {
+      text-align: center;
+      .buttons {
+        margin: auto;
+        flex-direction: column;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .leftCard {
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .textDiv {
+        margin: auto;
+      }
+      &::before {
+        width: 100% !important;
+      }
+      .imgDiv {
+        display: none;
+      }
+    }
+  }
+  .videoDiv {
+    right: 0rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .topsec {
+    .cardSec {
+      .rightCard {
+        text-align: center;
+        padding: 2rem 1rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
